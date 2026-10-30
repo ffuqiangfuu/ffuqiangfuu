@@ -13,7 +13,7 @@ I build agents and the systems that support them, from tool integration and cont
 **CodeWeave：多智能体代码协作引擎**  
 *Multi-agent Code Collaboration Engine*
 
-A local coding-agent harness built on the [Pico runtime](https://gitee.com/htxoffical/pico), with a multi-agent orchestration layer.
+A local coding-agent harness for coordinating multiple workers, isolating their changes, and delivering reviewable patches.
 
 > From a task graph to isolated changes and a reviewable patch.
 
@@ -25,7 +25,7 @@ A local coding-agent harness built on the [Pico runtime](https://gitee.com/htxof
 **Stack:** Python · SQLite · Git worktrees  
 **Stage:** Local development
 
-[Explore CodeWeave](projects/CodeWeave.md) · [How it works](projects/CodeWeave.md#how-it-works) · [Project status](projects/CodeWeave.md#project-status-and-attribution)
+[Explore CodeWeave](projects/CodeWeave.md) · [How it works](projects/CodeWeave.md#how-it-works) · [Project status](projects/CodeWeave.md#project-status)
 
 ## A little about me
 

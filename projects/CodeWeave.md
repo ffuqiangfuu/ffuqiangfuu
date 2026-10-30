@@ -2,7 +2,7 @@
 
 **Multi-agent Code Collaboration Engine**
 
-CodeWeave is a local agent harness for repository-based coding tasks. It adds multi-agent orchestration to the [Pico local coding-agent runtime](https://gitee.com/htxoffical/pico).
+CodeWeave is a local agent harness for repository-based coding tasks. It coordinates multiple workers across isolated workspaces and integrates their changes into a reviewable result.
 
 The goal is a reviewable engineering workflow: turn a task into a dependency graph, run independent workers, integrate their patches, and evaluate the result with explicit checks.
 
@@ -22,8 +22,6 @@ The goal is a reviewable engineering workflow: turn a task into a dependency gra
 - **Git worktrees:** separate workspaces and reviewable patch delivery.
 - **Run artifacts:** task state, traces, and reports for inspection and recovery.
 
-The current runtime retains the `pico` package and CLI. CodeWeave is the project presentation name; it is not a published Python package or a new CLI command.
-
 ## Boundaries
 
 Team coding starts from a clean, committed Git baseline. Results are delivered in an integration workspace and a patch; the current checkout is not automatically overwritten. Worktree and process separation do not provide an operating-system security sandbox.
@@ -32,8 +30,8 @@ Interrupted runs retry unfinished tasks. Checks are required for a verified comp
 
 ## 中文简介
 
-CodeWeave 基于 Pico 本地编码代理运行时，加入任务依赖图、独立进程 Worker、Git worktree 隔离、SQLite 状态管理，以及验证和有限修复。它把多智能体协作的结果整理为可审查的补丁与执行报告。
+CodeWeave 面向仓库级编码任务，使用任务依赖图、独立进程 Worker、Git worktree 隔离、SQLite 状态管理，以及验证和有限修复。它把多智能体协作的结果整理为可审查的补丁与执行报告。
 
-## Project status and attribution
+## Project status
 
-This overview describes the current local implementation. A public CodeWeave source repository has not been linked yet. The upstream Pico source and attribution are retained; no new license is asserted here.
+This overview describes the current local implementation. A public CodeWeave source repository has not been linked yet.
